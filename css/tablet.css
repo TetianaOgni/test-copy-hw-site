@@ -3,8 +3,7 @@
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    /* outline: 1px, solid, green; */
-    outline: none;
+    outline: 1px solid rgb(28, 23, 167);
   }
   .header {
     padding-bottom: 10px;
@@ -48,6 +47,7 @@
     background-color: var(--pressed-state-color);
     border-radius: 2px;
     left: 0;
+    /* podgon */
     bottom: -17px;
   }
 
@@ -73,5 +73,21 @@
     color: var(--text-color);
 
     transition: color var(--transition-dur-and-func);
+  }
+
+  /* Hero */
+  .hero {
+    padding-bottom: 108px;
+  }
+
+  .hero-title-wrapper {
+    max-width: 496px;
+    margin-bottom: 40px;
+  }
+
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 1.12px;
   }
 }

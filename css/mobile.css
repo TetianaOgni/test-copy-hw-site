@@ -376,44 +376,61 @@ img {
 }
 
 /* -----Hero----- */
-/* 
+
 .hero {
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   text-align: center;
   background-color: var(--dark-color);
 }
 
 .hero-overlay {
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  /* max-width: 1600px; */
+  /* margin-left: auto;
+  margin-right: auto; */
   background-image: linear-gradient(
       to right,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero.jpg);
+    url(../images/hero-bg-mob-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.hero-title {
-  max-width: 550px;
-  font-size: 56px;
-  line-height: 1.07;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: var(--contrast-color);
-
-  margin-bottom: 48px;
-  margin-left: auto;
-  margin-right: auto;
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-overlay {
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-mob-2x.jpg);
+  }
 }
 
-.hero-btn {
-  line-height: 1.19;
+.hero-title-wrapper {
+  max-width: 320px;
+  margin: auto;
+  margin-bottom: 72px;
+}
+
+.hero-title {
+  font-size: 36px;
+  line-height: 1.11;
+  font-weight: 700;
+  letter-spacing: 0.72px;
+  color: var(--contrast-color);
+  text-transform: capitalize;
+}
+
+.hero-btn,
+.footer-form-btn,
+.modal-send-btn {
   color: var(--contrast-color);
   background-color: var(--primary-brand-color);
   border-color: transparent;
@@ -425,12 +442,16 @@ img {
 }
 
 .hero-btn:hover,
-.hero-btn:focus {
+.hero-btn:focus,
+.footer-form-btn:hover,
+.footer-form-btn:focus,
+.modal-send-btn:hover,
+.modal-send-btn:focus {
   color: var(--contrast-color);
   background-color: var(--pressed-state-color);
   border-color: transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-} */
+}
 
 /* -----Strategy-----*/
 /* 
