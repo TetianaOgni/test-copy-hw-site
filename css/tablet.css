@@ -90,4 +90,20 @@
     line-height: 1.07;
     letter-spacing: 1.12px;
   }
+  /* -----Strategy-----*/
+
+  .strategy-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+
+  .strategy-item {
+    width: calc((100% - 1 * 24px) / 2);
+  }
+
+  .strategy-subtitle {
+    text-align: left;
+  }
 }
