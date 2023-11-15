@@ -106,4 +106,42 @@
   .strategy-subtitle {
     text-align: left;
   }
+  /* -----Team----- */
+
+  @media screen and (max-width: 1158px) {
+    .team > .container,
+    .customers > .container,
+    .footer > .container {
+      padding-left: 108px;
+      padding-right: 108px;
+    }
+  }
+
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .team-list {
+    row-gap: 64px;
+    column-gap: 24px;
+  }
+
+  .team-item {
+    width: calc((100% - 1 * 24px) / 2);
+  }
+
+  /* -----Customers----- */
+
+  .customers-list {
+    column-gap: 24px;
+  }
+
+  .customers-item {
+    width: calc((100% - 2 * 24px) / 3);
+  }
+
+  .customers-icon-svg {
+    width: 104px;
+  }
 }
