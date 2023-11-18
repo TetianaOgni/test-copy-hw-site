@@ -650,35 +650,34 @@ img {
 }
 
 /* -----Footer----- */
-
-/* .footer {
-  padding-top: 100px;
-  padding-bottom: 100px;
-
+.footer {
+  padding-top: 96px;
+  padding-bottom: 96px;
   background-color: var(--dark-color);
 }
 
 .footer-container {
   display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+.footer-container-logo,
+.footer-container-icon,
+.footer-container-mail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-logo {
   line-height: 1.16;
   color: var(--light-color);
+  margin-bottom: 16px;
 }
 
 .footer-text {
-  max-width: 264px;
+  width: 268px;
   color: var(--accent-color);
-  margin-top: 16px;
-}
-
-.footer-container-logo {
-  margin-right: 120px;
-}
-
-.footer-container-icon {
-  margin-right: 80px;
 }
 
 .footer-title {
@@ -689,10 +688,9 @@ img {
 
 .footer-icon-list {
   display: flex;
-  justify-content: center;
   gap: 16px;
-} */
-/* 
+}
+
 .footer-icon-item {
   width: 40px;
   height: 40px;
@@ -707,17 +705,63 @@ img {
   justify-content: center;
   align-items: center;
 
-  transition: backgroung-color var(--transition-dur-and-func);
-} */
+  transition: background-color var(--transition-dur-and-func);
+}
 
-/* .footer-icon-svg {
+.footer-icon-svg {
   fill: var(--light-color);
 }
 
 .footer-icon-link:hover,
 .footer-icon-link:focus {
   background-color: var(--success-color);
-} */
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+.footer-form-label {
+  width: inherit;
+}
+.footer-form-email {
+  height: 40px;
+  width: 100%;
+
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: var(--contrast-color);
+
+  padding: 8px 16px;
+
+  transition: border-color var(--transition-dur-and-func);
+}
+
+.footer-form-email::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-form-email:focus {
+  outline: none;
+  border-color: var(--primary-brand-color);
+}
+
+.footer-form-btn {
+  display: flex;
+  gap: 16px;
+
+  max-width: 165px;
+  height: 40px;
+  padding: 8px 24px 8px 24px;
+}
 
 /* -----Modal----- */
 
