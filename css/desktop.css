@@ -54,7 +54,7 @@
     border-radius: 4px;
     background-repeat: no-repeat;
     background-position: center;
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
   }
 
   .icon-strategy::before {
@@ -106,6 +106,10 @@
   .customers {
     padding-top: 120px;
     padding-bottom: 120px;
+  }
+
+  .team-item {
+    width: calc((100% - 3 * 24px) / 4);
   }
 
   /* -----Customers----- */
