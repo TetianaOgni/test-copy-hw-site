@@ -109,6 +109,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  border: none;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -371,7 +372,6 @@ img {
   border-color: transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   padding: 16px 32px;
-  min-width: 170px;
 
   transition: background-color var(--transition-dur-and-func);
 }
@@ -666,24 +666,23 @@ img {
 .footer-container-mail {
   display: flex;
   flex-direction: column;
+  gap: 16px;
   align-items: center;
 }
 
 .footer-logo {
   line-height: 1.16;
   color: var(--light-color);
-  margin-bottom: 16px;
 }
 
 .footer-text {
-  width: 268px;
+  width: 264px;
   color: var(--accent-color);
 }
 
 .footer-title {
   font-weight: 500;
   color: var(--contrast-color);
-  margin-bottom: 16px;
 }
 
 .footer-icon-list {
@@ -755,12 +754,10 @@ img {
 }
 
 .footer-form-btn {
+  padding: 8px 24px;
   display: flex;
   gap: 16px;
-
-  max-width: 165px;
-  height: 40px;
-  padding: 8px 24px 8px 24px;
+  align-items: center;
 }
 
 /* -----Modal----- */

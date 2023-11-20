@@ -144,4 +144,29 @@
   .customers-icon-svg {
     width: 104px;
   }
+  /* -----Footer----- */
+
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+  }
+  @media screen and (max-width: 1157px) {
+    .footer-container-logo,
+    .footer-container-icon,
+    .footer-container-mail {
+      align-items: baseline;
+      width: calc((100% - 1 * 24px) / 2);
+    }
+  }
+  .footer-form {
+    flex-direction: row;
+  }
+
+  .footer-form-email {
+    width: 264px;
+  }
+  .footer-form {
+    gap: 24px;
+  }
 }

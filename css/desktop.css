@@ -121,4 +121,19 @@
   .customers-icon-svg {
     width: 104px;
   }
+  /* -----Footer----- */
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .footer-container {
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+  .footer-container-logo {
+    margin-right: 120px;
+  }
+  .footer-container-icon {
+    margin-right: 80px;
+  }
 }
