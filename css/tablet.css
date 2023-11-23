@@ -127,7 +127,8 @@
     column-gap: 24px;
   }
 
-  .team-item {
+  .team-item,
+  .card-item {
     width: calc((100% - 1 * 24px) / 2);
   }
 
@@ -151,14 +152,13 @@
     flex-wrap: wrap;
     column-gap: 24px;
   }
-  @media screen and (max-width: 1157px) {
-    .footer-container-logo,
-    .footer-container-icon,
-    .footer-container-mail {
-      align-items: baseline;
-      width: calc((100% - 1 * 24px) / 2);
-    }
+  .footer-container-logo,
+  .footer-container-icon,
+  .footer-container-mail {
+    align-items: baseline;
+    width: calc((100% - 1 * 24px) / 2);
   }
+
   .footer-form {
     flex-direction: row;
   }
@@ -168,5 +168,31 @@
   }
   .footer-form {
     gap: 24px;
+  }
+  /* -----Portfolio----- */
+
+  .portfolio {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+
+  .filter-list {
+    justify-content: center;
+    margin-bottom: 64px;
+  }
+
+  .filter-item:nth-child(3n + 3) {
+    margin-right: 0;
+  }
+
+  .card-list {
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+  /* .card-item {
+    width: calc((100% - 1 * 24px) / 2);
+  } */
+  .card-img {
+    height: 300px;
   }
 }

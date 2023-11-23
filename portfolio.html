@@ -15,19 +15,20 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <!-- <link rel="stylesheet" href="./css/portfolio.css" /> -->
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
-
   <body>
     <!-----Header----->
-
     <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
-          <a href="" class="header-logo link logo"
-            ><span class="primary">Web</span>Studio</a
+          <a href="" class="header-logo link logo">
+            <span class="primary">Web</span>Studio</a
           >
-
           <ul class="header-list list">
             <li class="header-item">
               <a href="./index.html" class="header-link link">Studio</a>
@@ -42,10 +43,17 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="mobile-menu-open" data-menu-open>
+          <svg class="mobile-menu-open-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
 
         <ul class="header-info-list list">
           <li class="info-item">
-            <a href="mailto:info@devstudio.com" class="header-info link"
+            <a
+              href="mailto:info@devstudio.com"
+              class="header-info header-mail link"
               >info@devstudio.com</a
             >
           </li>
@@ -55,6 +63,79 @@
             >
           </li>
         </ul>
+      </div>
+
+      <div class="mobile-menu is-hidden" data-menu>
+        <div class="container">
+          <div class="mobile-menu-top">
+            <button type="button" class="mobile-menu-close-btn" data-menu-close>
+              <svg class="mobile-menu-close-icon" width="8" height="8">
+                <use href="./images/icons.svg#close-btn-modal"></use>
+              </svg>
+            </button>
+            <nav>
+              <ul class="menu-list list">
+                <li class="menu-item">
+                  <a href="./index.html" class="menu-link link">Studio</a>
+                </li>
+                <li class="menu-item">
+                  <a href="./portfolio.html" class="menu-link link current"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="menu-item">
+                  <a href="./contacts" class="menu-link link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="mobile-menu-bottom">
+            <ul class="menu-info-list list">
+              <li class="menu-info-item">
+                <a href="tel:+110001111111" class="menu-info-tel link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="menu-info-item">
+                <a href="mailto:info@devstudio.com" class="menu-info-mail link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="menu-icon-list list">
+              <li class="menu-icon-item">
+                <a href="" class="menu-icon-link">
+                  <svg class="menu-icon-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-icon-item">
+                <a href="" class="menu-icon-link">
+                  <svg class="menu-icon-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-icon-item">
+                <a href="" class="menu-icon-link">
+                  <svg class="menu-icon-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-icon-item">
+                <a href="" class="menu-icon-link">
+                  <svg class="menu-icon-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -89,7 +170,7 @@
                     class="card-img"
                     src="./images/card1.jpg"
                     alt="Bank app"
-                    width="360"
+                    width="396"
                     height="300"
                   />
                   <p class="card-overlay text">
@@ -113,7 +194,7 @@
                     class="card-img"
                     src="./images/card2.jpg"
                     alt="Smartphone with QR code"
-                    width="360"
+                    width="396"
                     height="300"
                   />
                   <p class="card-overlay text">
@@ -135,7 +216,7 @@
                     class="card-img"
                     src="./images/card3.jpg"
                     alt="Laptop and smartphone"
-                    width="360"
+                    width="396"
                     height="300"
                   />
                   <p class="card-overlay text">
@@ -157,7 +238,7 @@
                     class="card-img"
                     src="./images/card4.jpg"
                     alt="Car's dashboard"
-                    width="360"
+                    width="396"
                     height="300"
                   />
                   <p class="card-overlay text">
@@ -179,7 +260,7 @@
                     class="card-img"
                     src="./images/card5.jpg"
                     alt="Images on smartphone"
-                    width="360"
+                    width="396"
                     height="300"
                   />
                   <p class="card-overlay text">
@@ -201,7 +282,7 @@
                     class="card-img"
                     src="./images/card6.jpg"
                     alt="Girl with earphones"
-                    width="360"
+                    width="396"
                     height="300"
                   />
                   <p class="card-overlay text">
@@ -223,7 +304,7 @@
                     class="card-img"
                     src="./images/card7.jpg"
                     alt="Instagram Stories"
-                    width="360"
+                    width="396"
                     height="300"
                   />
                   <p class="card-overlay text">
@@ -247,7 +328,7 @@
                     class="card-img"
                     src="./images/card8.jpg"
                     alt="Women with groceries"
-                    width="360"
+                    width="396"
                     height="300"
                   />
                   <p class="card-overlay text">
@@ -269,7 +350,7 @@
                     class="card-img"
                     src="./images/card9.jpg"
                     alt="Cap of coffee"
-                    width="360"
+                    width="396"
                     height="300"
                   />
                   <p class="card-overlay text">
@@ -335,8 +416,25 @@
         </div>
         <div class="footer-container-mail">
           <p class="footer-title text">Subscribe</p>
+          <form class="footer-form">
+            <label class="footer-form-label">
+              <input
+                type="email"
+                class="footer-form-email"
+                name="user_email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="footer-form-btn button">
+              <span class="footer-btn-text">Subscribe</span>
+              <svg class="footer-plane-icon" width="24" height="24">
+                <use href="./images/icons.svg#plane-icon-footer"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

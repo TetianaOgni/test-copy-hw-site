@@ -112,6 +112,7 @@ img {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  padding: 0;
 }
 
 /* -----Header----- */
@@ -434,12 +435,11 @@ img {
 }
 
 /* .strategy-list,
-.result-list,
 .team-list,
 .card-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+   gap: 24px; 
 } */
 
 /* -----Result----- */
@@ -476,9 +476,15 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 
+  /* display: flex;
+  flex-direction: column; */
+  align-items: center;
+  /* gap: 8px; */
+}
+.team-container,
+.card-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 8px;
 }
 
@@ -568,24 +574,29 @@ img {
 /* -----Portfolio----- */
 
 .portfolio {
-  padding-top: 96px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: var(--contrast-color);
 }
 
 .filter-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 72px;
+  flex-wrap: wrap;
+  row-gap: 8px;
+  column-gap: 24px;
+  margin-bottom: 48px;
+}
+
+.filter-item:nth-child(3n + 3) {
+  margin-right: 125px;
 }
 
 .filter-btn {
-  line-height: 1.5;
   text-align: center;
   color: var(--primary-brand-color);
   background-color: var(--light-color);
   border: 1px solid var(--accent-color);
-  padding: 12px 24px;
-
-  box-shadow: none;
+  padding: 8px 16px;
 
   transition: color var(--transition-dur-and-func),
     background-color var(--transition-dur-and-func),
@@ -602,17 +613,15 @@ img {
   border-color: transparent;
 }
 
-.filter-item:not(:last-child) {
-  margin-right: 24px;
-}
-
 .card-list {
+  display: flex;
+  flex-wrap: wrap;
   row-gap: 48px;
 }
 
-.card-item {
-  width: calc((100% - 2 * 24px) / 3);
-}
+/* .card-item {
+  max-width: 100%;
+} */
 
 .card-link {
   display: block;
@@ -626,13 +635,19 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+.card-img {
+  height: 280px;
+}
+
 .card-container {
   background: var(--contrast-color);
   border: 1px solid var(--accent-color);
   border-top: none;
-  padding-left: 16px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 16px;
+
+  /* display: flex;
+  flex-direction: column;
+  gap: 8px; */
 }
 
 .card-overlay-container {

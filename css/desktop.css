@@ -140,4 +140,17 @@
   .footer-container-icon {
     margin-right: 80px;
   }
+  /* -----Portfolio----- */
+
+  .portfolio {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+
+  .filter-list {
+    margin-bottom: 72px;
+  }
+  .card-item {
+    width: calc((100% - 48px) / 3);
+  }
 }
