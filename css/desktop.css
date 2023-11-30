@@ -28,9 +28,12 @@
     padding-top: 188px;
     padding-bottom: 188px;
   }
-  .hero-title-wrapper {
-    margin-bottom: 48px;
+  .hero-container {
+    gap: 48px;
   }
+  /* .hero-title-wrapper {
+    margin-bottom: 48px;
+  } */
 
   /* -----Strategy-----*/
 

@@ -16,7 +16,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <!-- <link rel="stylesheet" href="./css/portfolio.css" /> -->
-    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/mobile.css" />
     <link rel="stylesheet" href="./css/tablet.css" />
     <link rel="stylesheet" href="./css/desktop.css" />
@@ -166,13 +165,46 @@
             <li class="card-item">
               <a href="" class="card-link link">
                 <div class="card-overlay-container">
-                  <img
-                    class="card-img"
-                    src="./images/card1.jpg"
-                    alt="Bank app"
-                    width="396"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/card-desk1-@1x-min.jpg 1x,
+                        ./images/card-desk1-@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                      width="360"
+                      height="300"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/card-tab1-@1x-min.jpg 1x,
+                        ./images/card-tab1-@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      width="356"
+                      height="300"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/card-mob1-@1x-min.jpg 1x,
+                        ./images/card-mob1-@2x-min.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                      width="396"
+                      height="280"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="card-img"
+                      src="./images/card-mob1-@1x-min.jpg"
+                      alt="Smartphone with QR code"
+                      width="396"
+                      height="280"
+                    />
+                  </picture>
+
                   <p class="card-overlay text">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -190,13 +222,45 @@
             <li class="card-item">
               <a href="" class="card-link link">
                 <div class="card-overlay-container">
-                  <img
-                    class="card-img"
-                    src="./images/card2.jpg"
-                    alt="Smartphone with QR code"
-                    width="396"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/card-desk2-@1x-min.jpg 1x,
+                        ./images/card-desk2-@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                      width="360"
+                      height="300"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/card-tab2-@1x-min.jpg 1x,
+                        ./images/card-tab2-@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      width="356"
+                      height="300"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/card-mob2-@1x-min.jpg 1x,
+                        ./images/card-mob2-@2x-min.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                      width="396"
+                      height="280"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="card-img"
+                      src="./images/card-mob2-@1x-min.jpg"
+                      alt="Smartphone with QR code"
+                      width="396"
+                      height="280"
+                    />
+                  </picture>
                   <p class="card-overlay text">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -212,13 +276,45 @@
             <li class="card-item">
               <a href="" class="card-link link">
                 <div class="card-overlay-container">
-                  <img
-                    class="card-img"
-                    src="./images/card3.jpg"
-                    alt="Laptop and smartphone"
-                    width="396"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/card-desk3-@1x-min.jpg 1x,
+                        ./images/card-desk3-@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                      width="360"
+                      height="300"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/card-tab3-@1x-min.jpg 1x,
+                        ./images/card-tab3-@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      width="356"
+                      height="300"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/card-mob3-@1x-min.jpg 1x,
+                        ./images/card-mob3-@2x-min.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                      width="396"
+                      height="280"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="card-img"
+                      src="./images/card-mob3-@1x-min.jpg"
+                      alt="Smartphone with QR code"
+                      width="396"
+                      height="280"
+                    />
+                  </picture>
                   <p class="card-overlay text">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -234,13 +330,45 @@
             <li class="card-item">
               <a href="" class="card-link link">
                 <div class="card-overlay-container">
-                  <img
-                    class="card-img"
-                    src="./images/card4.jpg"
-                    alt="Car's dashboard"
-                    width="396"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/card-desk4-@1x-min.jpg 1x,
+                        ./images/card-desk4-@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                      width="360"
+                      height="300"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/card-tab4-@1x-min.jpg 1x,
+                        ./images/card-tab4-@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      width="356"
+                      height="300"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/card-mob4-@1x-min.jpg 1x,
+                        ./images/card-mob4-@2x-min.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                      width="396"
+                      height="280"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="card-img"
+                      src="./images/card-mob4-@1x-min.jpg"
+                      alt="Smartphone with QR code"
+                      width="396"
+                      height="280"
+                    />
+                  </picture>
                   <p class="card-overlay text">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -256,13 +384,45 @@
             <li class="card-item">
               <a href="" class="card-link link">
                 <div class="card-overlay-container">
-                  <img
-                    class="card-img"
-                    src="./images/card5.jpg"
-                    alt="Images on smartphone"
-                    width="396"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/card-desk5-@1x-min.jpg 1x,
+                        ./images/card-desk5-@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                      width="360"
+                      height="300"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/card-tab5-@1x-min.jpg 1x,
+                        ./images/card-tab5-@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      width="356"
+                      height="300"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/card-mob5-@1x-min.jpg 1x,
+                        ./images/card-mob5-@2x-min.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                      width="396"
+                      height="280"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="card-img"
+                      src="./images/card-mob5-@1x-min.jpg"
+                      alt="Smartphone with QR code"
+                      width="396"
+                      height="280"
+                    />
+                  </picture>
                   <p class="card-overlay text">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -278,13 +438,45 @@
             <li class="card-item">
               <a href="" class="card-link link">
                 <div class="card-overlay-container">
-                  <img
-                    class="card-img"
-                    src="./images/card6.jpg"
-                    alt="Girl with earphones"
-                    width="396"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/card-desk6-@1x-min.jpg 1x,
+                        ./images/card-desk6-@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                      width="360"
+                      height="300"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/card-tab6-@1x-min.jpg 1x,
+                        ./images/card-tab6-@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      width="356"
+                      height="300"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/card-mob6-@1x-min.jpg 1x,
+                        ./images/card-mob6-@2x-min.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                      width="396"
+                      height="280"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="card-img"
+                      src="./images/card-mob6-@1x-min.jpg"
+                      alt="Smartphone with QR code"
+                      width="396"
+                      height="280"
+                    />
+                  </picture>
                   <p class="card-overlay text">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -300,13 +492,45 @@
             <li class="card-item">
               <a href="" class="card-link link">
                 <div class="card-overlay-container">
-                  <img
-                    class="card-img"
-                    src="./images/card7.jpg"
-                    alt="Instagram Stories"
-                    width="396"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/card-desk7-@1x-min.jpg 1x,
+                        ./images/card-desk7-@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                      width="360"
+                      height="300"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/card-tab7-@1x-min.jpg 1x,
+                        ./images/card-tab7-@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      width="356"
+                      height="300"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/card-mob7-@1x-min.jpg 1x,
+                        ./images/card-mob7-@2x-min.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                      width="396"
+                      height="280"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="card-img"
+                      src="./images/card-mob7-@1x-min.jpg"
+                      alt="Smartphone with QR code"
+                      width="396"
+                      height="280"
+                    />
+                  </picture>
                   <p class="card-overlay text">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -324,13 +548,45 @@
             <li class="card-item">
               <a href="" class="card-link link">
                 <div class="card-overlay-container">
-                  <img
-                    class="card-img"
-                    src="./images/card8.jpg"
-                    alt="Women with groceries"
-                    width="396"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/card-desk8-@1x-min.jpg 1x,
+                        ./images/card-desk8-@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                      width="360"
+                      height="300"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/card-tab8-@1x-min.jpg 1x,
+                        ./images/card-tab8-@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      width="356"
+                      height="300"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/card-mob8-@1x-min.jpg 1x,
+                        ./images/card-mob8-@2x-min.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                      width="396"
+                      height="280"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="card-img"
+                      src="./images/card-mob8-@1x-min.jpg"
+                      alt="Smartphone with QR code"
+                      width="396"
+                      height="280"
+                    />
+                  </picture>
                   <p class="card-overlay text">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -346,13 +602,45 @@
             <li class="card-item">
               <a href="" class="card-link link">
                 <div class="card-overlay-container">
-                  <img
-                    class="card-img"
-                    src="./images/card9.jpg"
-                    alt="Cap of coffee"
-                    width="396"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/card-desk9-@1x-min.jpg 1x,
+                        ./images/card-desk9-@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                      width="360"
+                      height="300"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/card-tab9-@1x-min.jpg 1x,
+                        ./images/card-tab9-@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      width="356"
+                      height="300"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/card-mob9-@1x-min.jpg 1x,
+                        ./images/card-mob9-@2x-min.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                      width="396"
+                      height="280"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="card-img"
+                      src="./images/card-mob9-@1x-min.jpg"
+                      alt="Smartphone with QR code"
+                      width="396"
+                      height="280"
+                    />
+                  </picture>
                   <p class="card-overlay text">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce

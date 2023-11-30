@@ -79,10 +79,12 @@
   .hero {
     padding-bottom: 108px;
   }
-
+  .hero-container {
+    gap: 40px;
+  }
   .hero-title-wrapper {
     max-width: 496px;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
   }
 
   .hero-title {
@@ -194,5 +196,10 @@
   } */
   .card-img {
     height: 300px;
+  }
+  /* -----Modal----- */
+  .modal-container {
+    max-width: 408px;
+    padding: 72px 24px 24px 24px;
   }
 }
