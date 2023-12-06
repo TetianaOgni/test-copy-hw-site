@@ -75,7 +75,7 @@
     transition: color var(--transition-dur-and-func);
   }
 
-  /* Hero */
+  /*-----Hero-----*/
   .hero {
     padding-bottom: 108px;
   }
@@ -118,11 +118,11 @@
       padding-right: 108px;
     }
   }
-
+  /* 
   .team-list {
     display: flex;
     flex-wrap: wrap;
-  }
+  } */
 
   .team-list {
     row-gap: 64px;
@@ -199,7 +199,7 @@
   }
   /* -----Modal----- */
   .modal-container {
-    max-width: 408px;
+    width: 408px;
     padding: 72px 24px 24px 24px;
   }
 }

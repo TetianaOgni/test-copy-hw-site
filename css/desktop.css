@@ -94,8 +94,8 @@
   }
 
   .result-list {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
     gap: 24px;
   }
 
@@ -105,8 +105,7 @@
   }
   /* -----Team----- */
 
-  .team,
-  .customers {
+  .team {
     padding-top: 120px;
     padding-bottom: 120px;
   }
@@ -116,7 +115,10 @@
   }
 
   /* -----Customers----- */
-
+  .customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
   .customers-list {
     column-gap: 24px;
   }
