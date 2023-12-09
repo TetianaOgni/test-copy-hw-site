@@ -36,6 +36,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 .section {
   padding-top: 96px;
   padding-bottom: 96px;
@@ -131,11 +132,15 @@ img {
 }
 
 .logo {
+  display: flex;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
   letter-spacing: 0.03em;
   line-height: 1.16;
   text-transform: uppercase;
+  perspective: 400px;
 }
 
 .icon-list {
@@ -206,15 +211,30 @@ img {
 .header-nav {
   display: flex;
   align-items: center;
+  perspective: 4 00px;
 }
 
 .header-logo {
-  display: block;
   color: var(--dark-color);
 }
 
 .primary {
   color: var(--primary-brand-color);
+
+  animation: rotateY 6000ms infinite alternate ease-out 1000ms;
+}
+
+@keyframes rotateY {
+  0% {
+    transform: perspective(400px) rotateY(360deg);
+  }
+
+  100% {
+    transform: perspective(400px) rotateY(-360deg);
+  }
+}
+.primary:hover {
+  animation-play-state: paused;
 }
 
 .mobile-menu-open {
@@ -764,7 +784,6 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  /* overflow: auto; */
 
   transition: opacity var(--transition-dur-and-func),
     visibility var(--transition-dur-and-func);
