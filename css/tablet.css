@@ -1,10 +1,9 @@
 /* -----Header----- */
-
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    outline: 1px solid rgb(28, 23, 167);
   }
+
   .header {
     padding-bottom: 10px;
   }
@@ -35,6 +34,7 @@
 
     transition: color var(--transition-dur-and-func);
   }
+
   .header-link.current {
     color: var(--primary-brand-color);
   }
@@ -47,7 +47,7 @@
     background-color: var(--pressed-state-color);
     border-radius: 2px;
     left: 0;
-    /* podgon */
+
     bottom: -17px;
   }
 
@@ -84,7 +84,6 @@
   }
   .hero-title-wrapper {
     max-width: 496px;
-    /* margin-bottom: 40px; */
   }
 
   .hero-title {
@@ -92,8 +91,8 @@
     line-height: 1.07;
     letter-spacing: 1.12px;
   }
-  /* -----Strategy-----*/
 
+  /* -----Strategy-----*/
   .strategy-list {
     display: flex;
     flex-wrap: wrap;
@@ -108,8 +107,8 @@
   .strategy-subtitle {
     text-align: left;
   }
-  /* -----Team----- */
 
+  /* -----Team----- */
   @media screen and (max-width: 1158px) {
     .team > .container,
     .customers > .container,
@@ -118,11 +117,6 @@
       padding-right: 108px;
     }
   }
-  /* 
-  .team-list {
-    display: flex;
-    flex-wrap: wrap;
-  } */
 
   .team-list {
     row-gap: 64px;
@@ -135,7 +129,6 @@
   }
 
   /* -----Customers----- */
-
   .customers-list {
     column-gap: 24px;
   }
@@ -147,13 +140,14 @@
   .customers-icon-svg {
     width: 104px;
   }
-  /* -----Footer----- */
 
+  /* -----Footer----- */
   .footer-container {
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 24px;
   }
+
   .footer-container-logo,
   .footer-container-icon,
   .footer-container-mail {
@@ -168,11 +162,12 @@
   .footer-form-email {
     width: 264px;
   }
+
   .footer-form {
     gap: 24px;
   }
-  /* -----Portfolio----- */
 
+  /* -----Portfolio----- */
   .portfolio {
     padding-top: 64px;
     padding-bottom: 96px;
@@ -191,12 +186,11 @@
     row-gap: 72px;
     column-gap: 24px;
   }
-  /* .card-item {
-    width: calc((100% - 1 * 24px) / 2);
-  } */
+
   .card-img {
     height: 300px;
   }
+
   /* -----Modal----- */
   .modal-container {
     width: 408px;
